@@ -17,13 +17,20 @@ k.loadSprite("spritesheet", "./spritesheet.png", {
 
 k.loadSprite("map", "./map.png");
 
-k.setBackground(k.Color.fromHex("#311047"));
+k.loadSound("backgroundMusic", "./sounds/background-music.mp3");
+
+k.setBackground(k.Color.fromHex("#4a4c4c"));
 
 k.scene("main", async () => {
+  k.play("backgroundMusic", {
+    loop: true,
+    volume: 0.5,  // Ajuste o volume
+  });
+
   const mapData = await (await fetch("./map.json")).json();
   const layers = mapData.layers;
 
-  // Acesso ao sprite do mapa
+  // sprite do mapa
   const map = k.add([
     k.sprite("map"),
     k.pos(0),
