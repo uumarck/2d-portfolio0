@@ -1,6 +1,14 @@
-export function displayDialogue(text, onDisplayEnd) {
+export function displayDialogue(text = "", onDisplayEnd) {
+  if (!text) {
+    console.error("Texto não definido ou inválido.");
+    return;
+  }
+
   const dialogueUI = document.getElementById("textbox-container");
   const dialogue = document.getElementById("dialogue");
+
+  // Garantir que o caixa de diálogo esteja visível
+  dialogueUI.style.display = "block";
 
   let index = 0;
   let currentText = "";
@@ -13,7 +21,7 @@ export function displayDialogue(text, onDisplayEnd) {
     }
 
     clearInterval(intervalRef);
-  }, 5);
+  }, 1);
 
   const closeBtn = document.getElementById("close");
 
@@ -26,16 +34,19 @@ export function displayDialogue(text, onDisplayEnd) {
   }
 
   closeBtn.addEventListener("click", onCloseBtnClick);
-}
 
+  addEventListener("keypress", (key) => {
+    if (key.code === "Enter") {
+      closeBtn.click();
+    }
+  });
+}
 
 export function setCamScale(k) {
   const resizeFactor = k.width() / k.height();
-  if (resizeFactor < 1 ) {
+  if (resizeFactor < 1) {
     k.camScale(k.vec2(1));
-    return;
+  } else {
+    k.camScale(k.vec2(1.5));
   }
-
-  k.camScale (k.vec2(1.5));
-
 }
