@@ -6,4 +6,4 @@ export default defineConfig({
     minify: 'terser',
   },
 });
-ga . && gc -m "descrição do trabalho" && git push origin nome-da-branch
+
