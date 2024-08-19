@@ -5,12 +5,12 @@ export const dialogueData = {
   tv: `Maratonas infinitas no YouTube. Como sobreviveria sem?`,
   bed: `Aqui recarrego a bateria pra mais codigo. Sono = criatividade.. dizem q alguns sonhos tem bugs. 🛌💤`,
   resume: `Curioso sobre meu trabalho? Espia meu <a href="https://www.linkedin.com/in/marckanderson" target="_blank">LinkedIn</a>. Bora conectar!🔗🌟`,
-  projects: `Voce esta dentro de um portifolio gamificado, feito com Kaboom.js! Fique a vontade, quer ver mais? Corre <a href="https://uumarck.itch.io" target="_blank">aqui</a> e confira meus outros jogos!🎮🚀`,
+  library: `Voce esta dentro de um portifolio gamificado, feito com Kaboom.js! Fique a vontade, quer ver mais? Corre <a href="https://uumarck.itch.io" target="_blank">aqui</a> e confira meus outros jogos!🎮🚀`,
   exit: `Quer fugir? Feche a aba, mas vai deixar saudades!👋😢`,
   "sofa-table": `Mesa de centro ou base de operacoes? Depende do dia.`,
-  library: `Mesa de centro ou base de operacoes? Depende do dia.`,
+  projects: `Mesa de centro ou base de operacoes? Depende do dia.`,
   desk: `Meu cantinho organizado... mais ou menos! Aqui a magica acontece.`,
-  fridge: `Lactose, gluten, trigo, soja, ovo,  algumas das minhas restrições alimentares🥛🚫🍞🍳`,
-  hole: `O ponto de partida para novos updates e aventuras! Fique ligado para mais novidades.. O melhor ainda esta por vir! 🌟`,
+  fridge: `Lactose, gluten, trigo, soja, ovo, alguns dos alimentos que não posso consumir.. 🥛🚫🍞🍳`,
+  hole: `Eae galera, aqui o ponto de partida para novos updates! Corre <a href="https://uumarck.itch.io" target="_blank">aqui</a> e confira meus outros jogos..🎮 O melhor ainda esta por vir!🌟`,
 
 };
